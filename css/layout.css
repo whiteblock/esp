@@ -8,22 +8,6 @@
 /* Forms */
 /* Params */
 
-/* TABLE OF CONTENTS
-	1. Header
-	2. Section
-	3. Started
-	4. About
-	5. Resume
-	6. Skills
-	7. Service
-	8. Portfolio
-	9. Box Items
-	10. Contacts
-	11. Blog
-	12. Footer
-	13. Popups
-*/
-
 /* 1. Header */
 header {
   position: fixed;
@@ -516,58 +500,6 @@ header .head-top .top-menu ul li.active .btn {
   margin: 0;
 }
 
-/* 6. Skills */
-.skills ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.skills ul li {
-  padding: 5px 0 30px 0;
-}
-
-.skills ul li .name {
-  font-size: 13px;
-  color: #363636;
-  font-weight: 400;
-  position: relative;
-  margin: 0 0 9px 0;
-}
-
-.skills ul li .progress {
-  display: block;
-  height: 3px;
-  position: relative;
-  width: 100%;
-  background: #dddddd;
-}
-
-.skills ul li .progress .percentage {
-  left: 0;
-  top: 0;
-  position: absolute;
-  height: 3px;
-  width: 0%;
-  background: #f26b38;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-.skills ul li .progress .percentage .percent {
-  position: absolute;
-  top: -27px;
-  right: 0;
-  font-size: 13px;
-  color: #363636;
-  font-weight: 400;
-}
-
-.skills ul li:last-child {
-  padding-bottom: 0;
-}
 
 /* 7. Service */
 @media (max-width: 400px) {
@@ -651,44 +583,6 @@ header .head-top .top-menu ul li.active .btn {
 
 .service-items .service-item p {
   margin-bottom: 0;
-}
-
-/* 8. Portfolio */
-.section.works .filters {
-  margin-bottom: 30px;
-}
-
-.section.works .filters input {
-  display: none;
-}
-
-.section.works .filters label {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 25px;
-  font-size: 13px;
-  color: #363636;
-  cursor: pointer;
-  position: relative;
-  padding-bottom: 0;
-}
-
-.section.works .filters label.glitch-effect {
-  color: #f26b38;
-}
-
-@media (max-width: 580px) {
-  .section.works .filters label {
-    padding-bottom: 15px;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .section.works .filters {
-    margin-bottom: 10px;
-  }
-
 }
 
 /* 9. Box Items */
@@ -864,57 +758,6 @@ header .head-top .top-menu ul li.active .btn {
 .section.contacts .alert-success p {
   margin: 60px 0 30px 0;
   font-size: 15px;
-}
-
-/* 11. Blog */
-.single-post-text img {
-  max-width: 100%;
-}
-
-.post-comments {
-  margin-top: 60px;
-}
-
-.post-comments .post-comment {
-  padding: 20px 0;
-  border-top: 1px solid #dddddd;
-}
-
-.post-comments .post-comment:first-child {
-  padding-top: 0;
-  border-top: none;
-}
-
-.post-comments .post-comment .image {
-  float: left;
-  width: 80px;
-  height: 80px;
-}
-
-.post-comments .post-comment .image img {
-  width: 100%;
-  height: 100%;
-}
-
-.post-comments .post-comment .desc {
-  margin-left: 100px;
-}
-
-.post-comments .post-comment .desc .name {
-  font-size: 13px;
-  color: #141414;
-  text-transform: uppercase;
-  font-weight: 500;
-  padding: 5px 0 0 0;
-  margin: 0 0 10px 0;
-}
-
-.post-comments .post-comment .desc p {
-  margin: 0;
-}
-
-.post-comments .form-comment .title {
-  margin: 30px 0 15px 0;
 }
 
 /* 12. Footer */
