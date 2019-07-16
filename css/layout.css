@@ -1,14 +1,4 @@
-/* Import Settings */
-/* Setting */
-/* Colors */
-/* Fonts */
-/* Fonts Size */
-/* Letter-Spacing */
-/* Line Height */
-/* Forms */
-/* Params */
-
-/* 1. Header */
+/* Header */
 header {
   position: fixed;
   left: 0;
@@ -259,7 +249,7 @@ header .head-top .top-menu ul li.active .btn {
   font-family: 'Roboto Mono';
   color: #141414;
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: lowercase;
   letter-spacing: 0.04em;
   margin: 10px 0 15px 0;
 }
@@ -319,7 +309,7 @@ header .head-top .top-menu ul li.active .btn {
   }
 
   .section.started .started-content .image img {
-    width: 80px;
+    width: 90px;
   }
 
 }
@@ -351,7 +341,67 @@ header .head-top .top-menu ul li.active .btn {
   animation: mouse-anim 1s ease-out 0s infinite;
 }
 
-/* 4. About */
+/* 4. Overview */
+.section .overview {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.section .overview .content {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.section.overview .content .desc {
+  font-size: 17px;
+  font-family: 'Roboto Mono';
+  color: #141414;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  margin: 10px 0 0 0;
+}
+
+
+/* Focus */
+/* TODO: float the image on top for responsiveness */
+
+.section .focus {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.section .focus .content {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+
+.section.focus .image {
+  float: left;
+  margin: 0 40px 0 0;
+}
+
+.section.focus .image img {
+  width: 135px;
+}
+
+.section.focus .content .a-title {
+  font-size: 32px;
+  font-family: 'Roboto Mono';
+  color: #141414;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  margin: 10px 0 0 20px;
+}
+
+
+
+/* Information */
 @media (max-width: 400px) {
   .section.about {
     text-align: center;
@@ -361,30 +411,14 @@ header .head-top .top-menu ul li.active .btn {
 
 .section.about .image {
   float: left;
+  margin: 10px;
 }
 
 .section.about .image img {
-  width: 100px;
-  height: 100px;
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -khtml-border-radius: 100px;
+  width: 130px;
 }
 
 @media (max-width: 600px) {
-  .section.about .image img {
-    width: 80px;
-    height: 80px;
-    border-radius: 80px;
-    -moz-border-radius: 80px;
-    -webkit-border-radius: 80px;
-    -khtml-border-radius: 80px;
-  }
-
-}
-
-@media (max-width: 400px) {
   .section.about .image {
     float: none;
     text-align: center;
@@ -392,17 +426,19 @@ header .head-top .top-menu ul li.active .btn {
 
   .section.about .image img {
     width: 100px;
-    height: 100px;
-    border-radius: 100px;
-    -moz-border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -khtml-border-radius: 100px;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .section.about .image img {
+    width: 80px;
   }
 
 }
 
 .section.about .desc {
-  margin-left: 130px;
+  margin-left: 180px;
 }
 
 @media (max-width: 600px) {
@@ -417,323 +453,6 @@ header .head-top .top-menu ul li.active .btn {
     margin-left: 0;
   }
 
-}
-
-.info-list {
-  margin-bottom: 42px;
-}
-
-.info-list ul li {
-  display: inline-block;
-  vertical-align: top;
-  width: 32%;
-  margin: 12px 0 0 0;
-}
-
-@media (max-width: 840px) {
-  .info-list ul li {
-    width: 48%;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .info-list ul li {
-    width: 100%;
-  }
-
-}
-
-.info-list ul li strong {
-  font-weight: 400;
-  color: #f26b38;
-}
-
-/* 5. Resume */
-@media (max-width: 840px) {
-  .section.resume .cols .col.col-md:first-child {
-    margin-bottom: 120px;
-  }
-
-}
-
-.resume-items .resume-item {
-  position: relative;
-  padding: 0 30px 60px 30px;
-}
-
-@media (max-width: 840px) {
-  .resume-items .resume-item {
-    padding-right: 0px;
-  }
-
-}
-
-.resume-items .resume-item:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 1px;
-  height: 100%;
-  background: #f26b38;
-}
-
-.resume-items .resume-item:first-child {
-  padding-top: 0;
-}
-
-.resume-items .resume-item:last-child {
-  padding-bottom: 0;
-  margin-top: -1px;
-}
-
-.resume-items .resume-item:last-child:before {
-  display: none;
-}
-
-.resume-items .resume-item .date {
-  position: relative;
-  top: -10px;
-  margin: 0 0 5px 0;
-  display: inline-block;
-  padding: 0 5px;
-  height: 20px;
-  line-height: 18px;
-  font-weight: 500;
-  font-size: 11px;
-  color: #f26b38;
-  border: 1px solid #f26b38;
-}
-
-.resume-items .resume-item .date:before {
-  content: '';
-  width: 29px;
-  height: 1px;
-  position: absolute;
-  left: -30px;
-  top: 9px;
-  background: #f26b38;
-}
-
-.resume-items .resume-item .name {
-  font-weight: 500;
-  color: #141414;
-  margin: 0 0 15px 0;
-}
-
-.resume-items .resume-item p {
-  margin: 0;
-}
-
-
-/* 7. Service */
-@media (max-width: 400px) {
-  .section.service {
-    text-align: center;
-  }
-
-}
-
-.section.service .title,
-.section.contacts .title {
-  margin-bottom: 0;
-}
-
-.service-items .service-item {
-  display: inline-block;
-  vertical-align: top;
-  width: 28%;
-  margin: 50px 4% 0 0;
-  text-align: left;
-}
-
-@media (max-width: 840px) {
-  .service-items .service-item {
-    width: 45%;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .service-items .service-item {
-    width: 100%;
-    margin-right: 0;
-  }
-
-}
-
-@media (max-width: 400px) {
-  .service-items .service-item {
-    text-align: center;
-  }
-
-}
-
-.service-items .service-item .icon {
-  float: left;
-  width: 36px;
-  text-align: center;
-  font-size: 30px;
-  color: #f26b38;
-}
-
-@media (max-width: 400px) {
-  .service-items .service-item .icon {
-    float: none;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-}
-
-.service-items .service-item .icon .ion {
-  display: block;
-}
-
-.service-items .service-item .name {
-  font-weight: 500;
-  font-size: 13px;
-  color: #141414;
-  margin: 6px 0 0 46px;
-}
-
-@media (max-width: 400px) {
-  .service-items .service-item .name {
-    margin: 0 0 0 2px;
-    display: inline-block;
-    vertical-align: middle;
-  }
-
-}
-
-.service-items .service-item p {
-  margin-bottom: 0;
-}
-
-/* 9. Box Items */
-.box-items {
-  position: relative;
-  overflow: hidden;
-  margin-left: -3%;
-}
-
-@media (max-width: 580px) {
-  .box-items {
-    margin-left: 0;
-  }
-
-}
-
-.box-items .box-item {
-  width: 30.33333%;
-  margin: 0 0 3% 3%;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-}
-
-@media (max-width: 840px) {
-  .box-items .box-item {
-    width: 47%;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .box-items .box-item {
-    width: 100%;
-    margin: 0 0 3% 0;
-  }
-
-}
-
-.box-items .box-item:hover .image .info {
-  opacity: 0.94;
-  transform: scale(1, 1);
-  -webkit-transform: scale(1, 1);
-  -moz-transform: scale(1, 1);
-  -o-transform: scale(1, 1);
-}
-
-.box-items .box-item:hover .desc .name {
-  color: #f26b38;
-}
-
-.box-items .box-item .image {
-  position: relative;
-}
-
-.box-items .box-item .image a {
-  display: block;
-  font-size: 0;
-}
-
-.box-items .box-item .image a img {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 0;
-}
-
-.box-items .box-item .image .info {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-  padding: 18px;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  -moz-transform: scale(0.5, 0.5);
-  -o-transform: scale(0.5, 0.5);
-}
-
-.box-items .box-item .image .info .centrize {
-  background: #f26b38;
-}
-
-.box-items .box-item .image .info .ion {
-  color: #ffffff;
-  font-size: 38px;
-  display: inline-block;
-  transition: all 0.1s ease-in 0.4s;
-  -moz-transition: all 0.1s ease-in 0.4s;
-  -webkit-transition: all 0.1s ease-in 0.4s;
-  -o-transition: all 0.1s ease-in 0.4s;
-  font-weight: normal;
-}
-
-.box-items .box-item .desc {
-  position: relative;
-  padding: 15px 45px 5px 45px;
-}
-
-@media (max-width: 1000px) {
-  .box-items .box-item .desc {
-    padding: 15px 15px 5px 15px;
-  }
-
-}
-
-.box-items .box-item .desc .name {
-  height: 40px;
-  display: block;
-  color: #363636;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
 }
 
 .date {
