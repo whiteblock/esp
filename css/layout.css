@@ -246,11 +246,11 @@ header .head-top .top-menu ul li.active .btn {
 
 .section.started .started-content .h-title {
   font-size: 50px;
-  font-family: 'Roboto Mono';
+  font-family: 'Space Mono', monospace;
   color: #141414;
   font-weight: 700;
   text-transform: lowercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.02em;
   margin: 10px 0 15px 0;
 }
 
@@ -356,18 +356,24 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.overview .content .desc {
-  font-size: 17px;
-  font-family: 'Roboto Mono';
+  font-size: 24px;
+  font-family: 'Work Sans', sans-serif;
   color: #141414;
   font-weight: 500;
   letter-spacing: 0.04em;
   margin: 10px 0 0 0;
 }
 
+@media (max-width: 420px) {
+  .section.overview .content h1 {
+    font-size: 24px;
+  }
+  .section.overview .content h3 {
+    font-size: 20px;
+  }
+}
 
 /* Focus */
-/* TODO: float the image on top for responsiveness */
-
 .section .focus {
   text-align: left;
   padding: 0;
@@ -391,15 +397,48 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.focus .content .a-title {
-  font-size: 32px;
-  font-family: 'Roboto Mono';
+  font-size: 36px;
+  font-family: 'Work Sans', sans-serif;
   color: #141414;
   font-weight: 500;
   letter-spacing: 0.01em;
   margin: 10px 0 0 20px;
 }
 
+@media (max-width: 1060px) {
+  .section.focus .content .a-title {
+    font-size: 30px;
+  }
 
+}
+
+@media (max-width: 760px) {
+  .section.focus .content .a-title {
+    font-size: 28px;
+  }
+
+}
+
+@media (max-width: 660px) {
+  .section.focus .image {
+    float: none;
+    text-align: center;
+  }
+
+  .section.focus .image img {
+    width: 100px;
+  }
+
+  .section.focus .content .a-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section.focus .content .a-title {
+    font-size: 24px;
+  }
+}
 
 /* Information */
 @media (max-width: 400px) {
@@ -483,7 +522,7 @@ header .head-top .top-menu ul li.active .btn {
 /* 10. Contacts */
 @media (max-width: 400px) {
   .section.contacts {
-    text-align: center;
+    text-align: left;
   }
 
 }
