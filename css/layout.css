@@ -240,10 +240,7 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
 }
 
-.section.started .started-content .image img {
-  width: 130px;
-}
-
+/*
 .section.started .started-content .h-title {
   font-size: 50px;
   font-family: 'Space Mono', monospace;
@@ -253,20 +250,19 @@ header .head-top .top-menu ul li.active .btn {
   letter-spacing: 0.02em;
   margin: 10px 0 15px 0;
 }
+*/ 
+.section.started .started-content .image .horz-logo {
+  width: 450px;
+}
+
+.section.started .started-content .image .vert-logo {
+  display: none;
+}
 
 .section.started .started-content .btn {
-  margin: 15px 0 0 10px;
+  margin: 40px 0 0 10px;
 }
 
-@media (max-width: 1060px) {
-  .section.started .started-content .h-title.blog_title {
-    font-size: 48px;
-  }
-  .section.started .started-content .image img {
-    width: 120px;
-  }
-
-}
 
 @media (max-width: 840px) {
   .section.started .started-content .h-title {
@@ -274,12 +270,8 @@ header .head-top .top-menu ul li.active .btn {
     padding: 0 20px;
   }
 
-  .section.started .started-content .h-title.blog_title {
-    font-size: 40px;
-  }
-
-  .section.started .started-content .image img {
-    width: 110px;
+  .section.started .started-content .image .horz-logo {
+    width: 380px;
   }
 
 }
@@ -293,8 +285,8 @@ header .head-top .top-menu ul li.active .btn {
     font-size: 45px;
   }
 
-  .section.started .started-content .image img {
-    width: 100px;
+  .section.started .started-content .image .horz-logo {
+    width: 300px;
   }
 
 }
@@ -308,8 +300,18 @@ header .head-top .top-menu ul li.active .btn {
     font-size: 26px;
   }
 
-  .section.started .started-content .image img {
-    width: 90px;
+  /*.section.started .started-content .image img {
+    width: 260px;
+    background-image: url('../img/vert-logo.svg');
+  }*/
+
+  .section.started .started-content .image .horz-logo {
+    display: none;
+  }
+  
+  .section.started .started-content .image .vert-logo {
+    width: 200px;
+    display: block;
   }
 
 }
@@ -359,7 +361,7 @@ header .head-top .top-menu ul li.active .btn {
   font-size: 24px;
   font-family: 'Work Sans', sans-serif;
   color: #141414;
-  font-weight: 500;
+  font-weight: 350;
   letter-spacing: 0.04em;
   margin: 10px 0 0 0;
 }
@@ -494,18 +496,6 @@ header .head-top .top-menu ul li.active .btn {
 
 }
 
-.date {
-  margin: 0 0 10px 0;
-  display: inline-block;
-  padding: 0 5px;
-  height: 20px;
-  line-height: 18px;
-  font-weight: 500;
-  font-size: 11px;
-  color: #f26b38;
-  border: 1px solid #f26b38;
-}
-
 .category {
   margin: 0 0 10px 0;
   display: inline-block;
@@ -615,53 +605,6 @@ footer .copy {
     display: none;
   }
 
-}
-
-/* 13. Popups */
-.popup-box {
-  margin: 30px auto;
-  width: 520px;
-  background: #ffffff;
-  position: relative;
-  padding: 10px;
-}
-
-@media (max-width: 580px) {
-  .popup-box {
-    width: 440px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .popup-box {
-    width: 320px;
-  }
-
-}
-
-.popup-box .image img {
-  width: 100%;
-  height: auto;
-}
-
-.popup-box .desc {
-  padding: 30px 20px;
-}
-
-.popup-box .desc h4 {
-  display: block;
-  color: #363636;
-  font-size: 17px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  margin: 0 0 15px 0;
-  line-height: normal;
-}
-
-.popup-box .desc p {
-  margin-top: 15px;
 }
 
 .mfp-fade.mfp-bg {
