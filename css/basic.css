@@ -43,14 +43,12 @@ body {
 	font-weight: 400;
 }
 
-body header,
 body footer,
 body .section {
 	opacity: 0;
 	visibility: hidden;
 }
 
-body.loaded header,
 body.loaded footer,
 body.loaded .section {
 	opacity: 1;
@@ -154,7 +152,7 @@ body.loaded .section {
 	overflow: hidden;
 	position: relative;
 	margin: 0 auto;
-	max-width: 1060px;
+	max-width: 860px;
 }
 
 /* 3. Columns */
@@ -271,24 +269,24 @@ a.btn,
 .btn {
 	display: inline-block;
 	vertical-align: middle;
-	height: 42px;
 	line-height: 40px;
 	text-align: center;
 	border-radius: 20px;
-	color: #363636;
-	font-size: 20px;
-	background: none;
+	color: #ffffff;
+	background: #e66981;
+	border: 1px solid #e66981;
+	font-size: 30px;
 	border: 1px solid #dddddd;
 	position: relative;
 	overflow: hidden;
-	padding: 0 30px;
+	padding: 0 70px;
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
 	-moz-transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 }
-
+/*
 a.btn.fill,
 .btn.fill {
 	color: #ffffff;
@@ -301,7 +299,7 @@ a.btn:hover,
 	color: #ffffff;
 	background: #e66981;
 	border: 1px solid #e66981;
-}
+}*/
 
 /* 7. Preloader */
 .preloader {

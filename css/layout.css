@@ -1,172 +1,7 @@
-/* Header */
-header {
-  position: fixed;
-  left: 0;
-  top: 30px;
-  width: 100%;
-  z-index: 100;
-  text-align: right;
-  background: #ffffff;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.6s ease 0s;
-  -moz-transition: all 0.6s ease 0s;
-  -webkit-transition: all 0.6s ease 0s;
-  -o-transition: all 0.6s ease 0s;
-}
-
-header.active {
-  opacity: 1!important;
-  visibility: visible!important;
-}
-
-header.active .menu-btn:before {
-  opacity: 0;
-}
-
-header.active .menu-btn:after {
-  bottom: 9px!important;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-}
-
-header.active .menu-btn span {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-}
-
-header.active .head-top .top-menu {
-  position: fixed;
-  top: 100px;
-  left: 50%;
-  margin-left: -100px;
-  width: 200px;
-  height: auto;
-  text-align: center;
-  opacity: 1!important;
-  visibility: visible!important;
-}
-
-header.active .head-top .top-menu ul li {
-  display: block;
-  margin: 30px 0;
-}
-
-@media (max-width: 840px) {
-  header {
-    top: 15px;
-  }
-
-}
-
-header .head-top {
-  padding: 30px 65px 15px 65px;
-}
-
-header .head-top .menu-btn {
-  position: relative;
-  margin: 0 auto;
-  width: 26px;
-  height: 20px;
-}
-
-header .head-top .menu-btn:before,
-header .head-top .menu-btn:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #141414;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-header .head-top .menu-btn:after {
-  top: auto;
-  bottom: 0;
-}
-
-header .head-top .menu-btn span {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #141414;
-  margin-top: -1px;
-  transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-}
-
-header .head-top .menu-btn:hover:before,
-header .head-top .menu-btn:hover:after,
-header .head-top .menu-btn:hover span {
-  background: #f26b38;
-}
-
-@media (max-width: 840px) {
-  header .head-top .menu-btn {
-    display: block;
-  }
-
-}
-
-@media (max-width: 840px) {
-  header .head-top .top-menu {
-    opacity: 0;
-    visibility: hidden;
-    height: 0px;
-    transition: opacity 0.3s ease 0.5s;
-    -moz-transition: opacity 0.3s ease 0.5s;
-    -webkit-transition: opacity 0.3s ease 0.5s;
-    -o-transition: opacity 0.3s ease 0.5s;
-  }
-
-}
-
-header .head-top .top-menu ul li {
-  margin-left: 50px;
-  display: inline-block;
-  vertical-align: top;
-  transition: color 0.3s ease 0s;
-  -moz-transition: color 0.3s ease 0s;
-  -webkit-transition: color 0.3s ease 0s;
-  -o-transition: color 0.3s ease 0s;
-}
-
-header .head-top .top-menu ul li a {
-  display: block;
-  margin-top: 12px;
-}
-
-header .head-top .top-menu ul li a.btn {
-  margin-top: 0;
-}
-
-header .head-top .top-menu ul li.active a {
-  color: #f26b38;
-}
-
-header .head-top .top-menu ul li.active .btn {
-  color: #ffffff;
-  background: #f26b38;
-  border: 1px solid #f26b38;
-}
-
-/* 2. Section */
+/* Section */
 .section {
   position: relative;
-  padding: 0 80px 150px 80px;
+  padding: 0 80px 60px 80px;
   z-index: 97;
   opacity: 1;
   visibility: visible;
@@ -178,14 +13,14 @@ header .head-top .top-menu ul li.active .btn {
 
 @media (max-width: 960px) {
   .section {
-    padding: 0 40px 120px 40px;
+    padding: 0 40px 50px 40px;
   }
 
 }
 
 @media (max-width: 480px) {
   .section {
-    padding: 0 20px 120px 20px;
+    padding: 0 20px 40px 20px;
   }
 
 }
@@ -240,19 +75,10 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
 }
 
-/*
-.section.started .started-content .h-title {
-  font-size: 50px;
-  font-family: 'Space Mono', monospace;
-  color: #141414;
-  font-weight: 700;
-  text-transform: lowercase;
-  letter-spacing: 0.02em;
-  margin: 10px 0 15px 0;
-}
-*/ 
 .section.started .started-content .image .horz-logo {
   width: 450px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section.started .started-content .image .vert-logo {
@@ -260,69 +86,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.started .started-content .btn {
-  margin: 40px 0 0 10px;
-}
-
-
-@media (max-width: 840px) {
-  .section.started .started-content .h-title {
-    font-size: 50px;
-    padding: 0 20px;
-  }
-
-  .section.started .started-content .image .horz-logo {
-    width: 380px;
-  }
-
-}
-
-@media (max-width: 580px) {
-  .section.started .started-content .h-title span {
-    display: block;
-  }
-
-  .section.started .started-content .h-title {
-    font-size: 45px;
-  }
-
-  .section.started .started-content .image .horz-logo {
-    width: 300px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  .section.started .started-content .h-title {
-    font-size: 40px;
-  }
-
-  .section.started .started-content .h-title.blog_title {
-    font-size: 26px;
-  }
-
-  /*.section.started .started-content .image img {
-    width: 260px;
-    background-image: url('../img/vert-logo.svg');
-  }*/
-
-  .section.started .started-content .image .horz-logo {
-    display: none;
-  }
-  
-  .section.started .started-content .image .vert-logo {
-    width: 200px;
-    display: block;
-  }
-
-}
-
-.section.started .started-content .h-subtitle {
-  font-size: 13px;
-}
-
-.section.started .started-content .typed-subtitle,
-.section.started .started-content .typed-bread {
-  font-size: 13px;
+  margin-top: 60px;
 }
 
 .section.started .mouse_btn {
@@ -341,6 +105,40 @@ header .head-top .top-menu ul li.active .btn {
   position: relative;
   top: 0px;
   animation: mouse-anim 1s ease-out 0s infinite;
+}
+
+@media (max-width: 840px) {
+  .section.started .started-content .h-title {
+    font-size: 50px;
+    padding: 0 20px;
+  }
+
+  .section.started .started-content .image .horz-logo {
+    width: 380px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .section.started .started-content .image .horz-logo {
+    display: none;
+  }
+  
+  .section.started .started-content .image .vert-logo {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section.started .started-content .btn {
+    margin: 30px 0 0 0;
+  } 
+
+  .section.started .mouse_btn .ion {
+    margin-top: 30px;
+  }
+
 }
 
 /* 4. Overview */
@@ -399,7 +197,7 @@ header .head-top .top-menu ul li.active .btn {
 }
 
 .section.focus .content .a-title {
-  font-size: 36px;
+  font-size: 30px;
   font-family: 'Work Sans', sans-serif;
   color: #141414;
   font-weight: 500;
@@ -407,16 +205,10 @@ header .head-top .top-menu ul li.active .btn {
   margin: 10px 0 0 20px;
 }
 
-@media (max-width: 1060px) {
-  .section.focus .content .a-title {
-    font-size: 30px;
-  }
-
-}
-
 @media (max-width: 760px) {
   .section.focus .content .a-title {
     font-size: 28px;
+
   }
 
 }
@@ -432,13 +224,14 @@ header .head-top .top-menu ul li.active .btn {
   }
 
   .section.focus .content .a-title {
-    font-size: 28px;
+    font-size: 30px;
+    margin: 20px 0 0 0;
   }
 }
 
 @media (max-width: 400px) {
   .section.focus .content .a-title {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 

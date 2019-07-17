@@ -43,39 +43,6 @@ $(function () {
 		});
 	});
 	
-	/*Fade-out animation between load pages*/
-	$('header .top-menu, .typed-bread').on('click', 'a', function(){
-		var link = $(this).attr('href');
-		if(link.indexOf('#section-') == 0){
-			if(!$('body').hasClass('home')){
-				location.href = '/'+link;
-			}
-
-			$('body, html').animate({scrollTop: $(link).offset().top - 110}, 400);
-			if($('header').hasClass('active')){
-				$('.menu-btn').trigger('click');
-			}
-		} else {
-			$('body').removeClass('loaded');
-			setTimeout(function() {
-				location.href = "" + link;
-			}, 500);
-		}
-		return false;
-	});
-	
-	/*Menu mobile*/
-	$('header').on('click', '.menu-btn', function(){
-		if($('header').hasClass('active')){
-			$('header').removeClass('active');
-			$('body').addClass('loaded');
-		} else {
-			$('header').addClass('active');
-			$('body').removeClass('loaded');
-		}
-		
-		return false;
-	});
 	
 	/* Hide mouse button on scroll */
 	$(window).scroll(function(){
@@ -200,13 +167,6 @@ $(function () {
 		else {
 			$(this).parent().removeClass('glitch-effect');
 		}
-		/* Refresh Portfolio magnific popup */
-		$('.has-popup').magnificPopup({
-			type: 'inline',
-			overflowY: 'auto',
-			closeBtnInside: true,
-			mainClass: 'mfp-fade'
-		});
 	});
 
 	/* One Page Menu Nav */
