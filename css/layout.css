@@ -188,12 +188,11 @@
 }
 
 .section.focus .image {
-  float: left;
-  margin: 0 40px 0 0;
+  text-align: center;
 }
 
 .section.focus .image img {
-  width: 135px;
+  width: 150px;
 }
 
 .section.focus .content .a-title {
@@ -202,36 +201,23 @@
   color: #141414;
   font-weight: 500;
   letter-spacing: 0.01em;
-  margin: 10px 0 0 20px;
+  margin: 10px 0 0 0;
 }
 
 @media (max-width: 760px) {
   .section.focus .content .a-title {
     font-size: 28px;
-
   }
 
 }
 
 @media (max-width: 660px) {
-  .section.focus .image {
-    float: none;
-    text-align: center;
-  }
-
   .section.focus .image img {
-    width: 100px;
+    width: 130px;
   }
 
   .section.focus .content .a-title {
     font-size: 30px;
-    margin: 20px 0 0 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .section.focus .content .a-title {
-    font-size: 28px;
   }
 }
 
